@@ -1,0 +1,261 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+  
+<title>Feedback form</title>  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src="register.js"></script>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/
+3.6.0/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".formheading").mouseenter(function(){
+      alert("Please provide your valueable feedback about about website on Uttarkhand tourism!")
+    })
+  })
+</script>
+<script>
+  $(document).ready(function(){
+    $("button").click(function(){
+      $(".Info_about_feedback").hide("slow");
+      $("#but2").hide();
+    })
+  })
+</script>
+<!--<script type = "text/javascript">
+  function checkAge() 
+  {
+    document.getElementById( "age" ).style.backgroundColor = '#81D4FA';
+    if( parseInt(age.value) < 10) 
+    {
+      window.alert("Stop! You are younger than 10" ) ;
+    }
+    document.getElementById("errors").innerHTML = " Website visitor's age less than 10! ";
+  }
+</script>-->
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+background-repeat : no-repeat;
+background-attachment:fixed;
+background-size:cover; 
+background-color:#ffffff ;
+  
+} 
+.formheading{
+  background-color: rebeccapurple;
+} 
+
+
+.Info_about_feedback h2{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  font-weight: 200;
+  color: rgb(52, 34, 190);
+}
+
+.Info_about_feedback p{
+  margin: 10px 10px; 
+  padding: 10px;  
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  font-weight: 200;
+  
+}
+button {   
+        background-color:rebeccapurple ;   
+        width: 50%;  
+        color: orange;   
+        padding: 10px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer; 
+        align-items: center;  
+      }   
+ form {   
+        border: 3px;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 50%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    } 
+ input[type=tel], input[type=email] {   
+        width: 50%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+    input[type=tel], input[type=phone] {   
+        width: 50%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    } 
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+    #but1{
+      text-align: center;
+    } 
+    #but2{
+      text-align: center;
+    } 
+    #question1{
+  font-size: larger;
+  font-weight: 200;
+  color: rgb(236, 78, 10);;
+}
+
+    #question2{
+        font-size: larger;
+        font-weight: 200;
+        color: rgb(236, 78, 10);; 
+    }   
+     
+ .container {   
+        padding: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        font-size: larger; 
+        line-height: 1.5;  
+         
+    } 
+    
+    
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+
+</style>   
+</head>    
+<body onLoad="ThankUser()"> 
+  
+  <div class = "formheading">   
+    <center> <h1 style = "color:#fdfdfd ;font-size:350%;" >Uttarkhand Village/City Sightseeing website visitors Feedback form</h1> </center> 
+  </div> 
+  
+  <br>
+  <div class="Info_about_feedback">
+    <h2>ABOUT FEEDBACK FORM</h2>
+    <br>
+        <p>Uttarkhand Village and City Sightseeing website is designed to help tourists visiting Uttarkhand in knowing
+        about various tourist sites like heritage places, parks, museums and also provides informations about famous local things 
+        including Homemade Chocolates and cosmetics, Handknitten shawls, varieties of sweets!
+        The main motive of this website is to provide recoginition to local vendors and thereby contributing to the 
+        country's economy!!!
+    </p> 
+  </div>
+  
+  <div id="but2">
+    <button>Click here to hide details about filling this form!</button>
+  </div>
+   <form id="form" action="insert.php" method="POST">  
+      <div class="container">   
+            <bold><label>First name : </label> </bold>
+            <br>
+              <input id="f_name" type="text" placeholder="Enter First name" name="f_name" onfocus="change1focusColor()">
+                        
+            <br>
+
+              <bold><label>Last name : </label>  </bold>
+            <br> 
+                <input id="l_name" type="text" placeholder="Enter Last name" name="l_name" onfocus="change2focusColor()">  
+            <br>
+                <bold><label>Native place : </label>  </bold>
+            <br> 
+                <input id="place" type="text" placeholder="Enter Native place" name="place" onfocus="change3focusColor()" >  
+            <br>
+            <bold><label>Age : </label>  </bold>
+            <br> 
+            <input id="age" type="text" placeholder="Enter Age" name="age" onblur="checkAge()" onfocus="change4focusColor()">  
+            <br>
+            <bold><label>E-mail : </label>  </bold>
+            <br> 
+             <input id="email" type="email" placeholder="Enter E-mail id" name="email" onfocus="change5focusColor()">  
+            <br>
+            <br>
+            <div class = "formheading1">
+            <fieldset>
+              <legend>How did you come to know about this website ?</legend>
+              <div id="question1"></div>
+              <div id="qn1" onmouseover="qn1desc()"> 
+                <input type="checkbox" id="friends" name="info" value="friends">
+                <label for="friends">Through friend's or family's suggestion</label>
+              </div>
+              <div>
+                <input type="checkbox" id="touristoffice" name="touristoffice" value="to">
+                <label for="to">Through any Tourist Office recommendation</label>
+              </div>
+            <div>
+                <input type="checkbox" id="ownsearch" name="ownsearch" value="os">
+                <label for="os">Through your own search</label>
+              </div>
+            </fieldset>
+            <br>
+            <fieldset>
+              <legend>How well did our website help in your travel ?</legend>
+              <div id="question2"></div>
+              <div id="qn2" onmouseover="qn2desc()"> 
+                <input type="checkbox" id="friends" name="info" value="friends">
+                <label for="friends">Had all necessary information about the required place</label>
+              </div>
+              <div>
+                <input type="checkbox" id="touristoffice" name="touristoffice" value="to">
+                <label for="to">Short and sweet to read</label>
+              </div>
+            <div>
+                <input type="checkbox" id="ownsearch" name="ownsearch" value="os">
+                <label for="os">Well organised</label>
+              </div>
+            </fieldset>
+
+            <br>
+            <fieldset>
+              <legend>If any left out places or information about that place please include them...</legend>
+              <input type="text" placeholder="Enter your suggestions" name="newplaces" >  
+            <br>
+            </fieldset>
+
+            <fieldset>
+              <legend>How happy are you with our guidance of our website ?</legend>
+              <input type="text" placeholder="Enter your suggestions" name="reviews" >  
+            <br>
+            </fieldset>
+
+            <br>
+            <fieldset>
+              <legend>Please share about your favourite place in Uttarkhand and rate them...</legend>
+              <input type="text" placeholder="Enter your suggestions" name="favplaces" >  
+            <br>
+
+            </fieldset>
+            </div>
+            <br>
+            <!--<div id="errors"></div>-->
+            <br>
+                        <div id="but1">
+                        <button type="submit" value="Submit" name="submit" class="Submit" a> Submit</button>   
+                        </div>
+                    </div>   
+    </form> 
+    
+</body>     
+</html>  

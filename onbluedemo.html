@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title>
+        JavaScript onblur Event
+</title>
+<script defer src="demo.js"></script>
+<style>
+.body-data {
+border : #81D4FA 2px solid;
+background-color : #03a9f400;
+text-align : left;
+padding-left : 20px;
+padding-bottom: 20px;
+height : auto;
+width : auto;
+}
+.resultText {
+margin: 0 0 3px 0;
+padding: 0px;
+display: block;
+font-weight: bold;
+}
+.heading {
+font-weight: bold;
+border-bottom: 2px solid #ddd;
+font-size: 15px;
+width: 98%;
+}
+</style>
+</head>
+<body>
+<div class = "body-data" >
+<div class = "heading" >
+<h2> JavaScript onblur Event </h2>
+<span> Click in the textbox then click outside to trigger the event </span>
+</div>
+<div class = "resultText" >
+</br>
+<p> Using HTML: attaching event on element directly </p>
+
+<input type = "text"  id = "age"  onblur = "checkAge()">
+<p id = "result1" > Default Text </p>
+</div>
+</div>
+</body>
+</html>
+<!---<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Onblurdemo
+        </title>
+        <script defer src="demo.js"></script>
+    </head>
+    <body background="white">
+        <form name="form" method="post" action="">
+            <table table-border="1">
+                <TR> <TD>Age</TD>
+                <TD><INPUT type="text" name="age" onBlur="checkAge()">
+                </TD></TR><TR> <TD>Phone Number</TD>
+                <TD><INPUT type="text" name="phNo"></TD>
+                </TR><TR> <TD><INPUT type="reset" value="Reset"></TD>
+                <TD><INPUT type="submit" value="Submit"></TD></TR>
+            </table>
+        </form>
+    </body>
+</html>-->
+
+<!---<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title>
+        JavaScript onblur Event
+</title>
+<style>
+.body-data {
+border : #81D4FA 2px solid;
+background-color : #03a9f400;
+text-align : left;
+padding-left : 20px;
+padding-bottom: 20px;
+height : auto;
+width : auto;
+}
+.resultText {
+margin: 0 0 3px 0;
+padding: 0px;
+display: block;
+font-weight: bold;
+}
+.heading {
+font-weight: bold;
+border-bottom: 2px solid #ddd;
+font-size: 15px;
+width: 98%;
+}
+</style>
+</head>
+<body>
+<div class = "body-data" >
+<div class = "heading" >
+<h2> JavaScript onblur Event </h2>
+<span> Click in the textbox then click outside to trigger the event </span>
+</div>
+<div class = "resultText" >
+</br>
+<p> Using HTML: attaching event on element directly </p>
+
+<input type = "text"  id = "age"  onblur = "checkAge()" >
+<p id = "result1" > Default Text </p>
+</div>
+</div>
+<script type = "text/javascript">
+function checkAge( ) {
+document.getElementById( "age" ).style.backgroundColor = '#81D4FA';
+if( parseInt(age.value) < 12) 
+    {
+      window.alert("Stop! You are younger than 12" ) ;
+    }
+document.getElementById("result1").innerHTML = " Input field lost focus ";
+}
+</script>
+</body>
+</html>-->
+
+
+<!---
+<!DOCTYPE html>   
+<html>   
+<head>  
+  
+<title>Feedback form</title>  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type = "text/javascript">
+  function checkAge() 
+  {
+    document.getElementById( "age" ).style.backgroundColor = '#81D4FA';
+    if( parseInt(age.value) < 10) 
+    {
+      window.alert("Stop! You are younger than 10" ) ;
+    }
+    document.getElementById("errors").innerHTML = " Website visitor's age less than 10! ";
+  }
+</script>
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+background-repeat : no-repeat;
+background-attachment:fixed;
+background-size:cover; 
+background-color:#ffffff ;
+  
+} 
+.formheading{
+  background-color: rebeccapurple;
+} 
+button {   
+       background-color:rebeccapurple ;   
+       width: 50%;  
+        color: orange;   
+        padding: 10px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer; 
+        align-items: center;  
+         }   
+ form {   
+        border: 3px;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 50%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    } 
+ input[type=tel], input[type=email] {   
+        width: 50%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }   
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        font-size: larger; 
+        line-height: 1.5;  
+         
+    } 
+    #but1{
+      text-align: center;
+    }
+    
+    *{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+</style>   
+</head>    
+<body> 
+  <div class = "formheading">   
+    <center> <h1 style = "color:#fdfdfd ;font-size:350%;" >Uttarkhand Village/City Sightseeing website visitors Feedback form</h1> </center> 
+  </div>  
+    <form id="form" method="post" action="">  
+        <div class="container">   
+            <bold><label>First name : </label> </bold>
+<br>
+            <input id="f_name" type="text" placeholder="Enter First name" name="firstname">
+             
+<br>
+
+            <bold><label>Last name : </label>  </bold>
+<br> 
+            <input id="l_name" type="text" placeholder="Enter Last name" name="Lastname" >  
+<br>
+           <bold><label>Native place : </label>  </bold>
+<br> 
+            <input id="place" type="text" placeholder="Enter Native place" name="Native place" >  
+<br>
+<bold><label>Age : </label>  </bold>
+<br> 
+<input id="age" type="text" placeholder="Enter Age" name="Age" onblur="checkAge()">  
+<br>
+<bold><label>E-mail : </label>  </bold>
+<br> 
+            <input id="email" type="email" placeholder="Enter E-mail id" name="email">  
+<br>
+<br>
+<fieldset>
+  <legend>How did you come to know about this website ?</legend>
+  <div>
+    <input type="checkbox" id="friends" name="info" value="friends" checked>
+    <label for="friends">Through friend's or family's suggestion</label>
+  </div>
+  <div>
+    <input type="checkbox" id="touristoffice" name="touristoffice" value="to">
+    <label for="to">Through any Tourist Office recommendation</label>
+  </div>
+ <div>
+    <input type="checkbox" id="ownsearch" name="ownsearch" value="os">
+    <label for="os">Through your own search</label>
+  </div>
+</fieldset>
+<br>
+<fieldset>
+  <legend>How well did our website help in your travel ?</legend>
+  <div>
+    <input type="checkbox" id="friends" name="info" value="friends" checked>
+    <label for="friends">Had all necessary information about the required place</label>
+  </div>
+  <div>
+    <input type="checkbox" id="touristoffice" name="touristoffice" value="to">
+    <label for="to">Short and sweet to read</label>
+  </div>
+ <div>
+    <input type="checkbox" id="ownsearch" name="ownsearch" value="os">
+    <label for="os">Well organised</label>
+  </div>
+</fieldset>
+
+<br>
+<fieldset>
+  <legend>If any left out places or information about that place please include them...</legend>
+  <input type="text" placeholder="Enter your suggestions" name="firstname" >  
+<br>
+</fieldset>
+
+<fieldset>
+  <legend>How happy are you with our guidance of our website ?</legend>
+  <input type="text" placeholder="Enter your suggestions" name="firstname" >  
+<br>
+</fieldset>
+
+<br>
+<fieldset>
+  <legend>Please share about your favourite place in Uttarkhand and rate them...</legend>
+  <input type="text" placeholder="Enter your suggestions" name="firstname" >  
+<br>
+<div class="rate">
+  <input type="radio" id="star5" name="rate" value="5" />
+  <label for="star5" title="text">5 stars</label>
+  <input type="radio" id="star4" name="rate" value="4" />
+  <label for="star4" title="text">4 stars</label>
+  <input type="radio" id="star3" name="rate" value="3" />
+  <label for="star3" title="text">3 stars</label>
+  <input type="radio" id="star2" name="rate" value="2" />
+  <label for="star2" title="text">2 stars</label>
+  <input type="radio" id="star1" name="rate" value="1" />
+  <label for="star1" title="text">1 star</label>
+</div>
+</fieldset>
+<br>
+<div id="errors"></div> 
+<br>
+            <div id="but1">
+            <button type="submit" class="Submit" a> Submit</button>   
+            </div>
+        </div>   
+    </form> 
+
+    
+</body>     
+</html>  -->
+
+

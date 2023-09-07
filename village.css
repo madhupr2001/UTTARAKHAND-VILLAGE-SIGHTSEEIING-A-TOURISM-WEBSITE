@@ -1,0 +1,113 @@
+#vs1
+{
+    background-image: url('for1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#vs1 h1
+{
+    font-size: xxx-large;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+#vs2 h2{
+   font-size: xx-large;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#vs2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: x-large;
+}
+
+#vs3{
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    line-gap-override: 10;
+    
+}
+
+#vs3 img{
+    display: inline-block;
+    margin: 25px 10px;
+}
+
+ul.vs3{
+list-style-type: square;
+line-height: 1.5;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#Agoda h2{
+text-align : center;
+font-family: Arial, Helvetica, sans-serif;
+}
+#Agoda h3{
+font-weight:100;
+line-height: 1.5;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+ul.a{
+list-style-type: circle;
+line-height: 1.5;
+font-family: Arial, Helvetica, sans-serif;
+}
+#Agoda img{
+
+  display: inline-block;
+  margin: 25px 10px;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(231, 86, 30);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#Barsu h2{
+    text-align : center;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    #Barsu h3{
+    font-weight:100;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    #Barsu h4{
+        font-weight:100;
+        line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    ul.a{
+    list-style-type: circle;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    #Barsu img{
+    
+      display: inline-block;
+      margin: 25px 10px;
+}
+  

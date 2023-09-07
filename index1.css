@@ -1,0 +1,15 @@
+#a1{
+    background-color: rgb(0, 0, 113);
+    color: orange;
+  }
+
+.villagelist{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: dotted;
+    text-shadow: 0em;
+}
+
+.villagelist h3{
+    font-size: x-large;
+}

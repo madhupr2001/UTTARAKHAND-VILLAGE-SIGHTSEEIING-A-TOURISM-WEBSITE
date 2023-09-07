@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+        Simple form
+    </title>
+    <script defer src="form.js"></script>
+</head>
+<link rel="stylesheet" href="form.css">
+<body>
+    <h1 style = "text-align:center;">Let us make a simple form design</h1>
+    <h1>This form is to get user-input</h1>
+    <form id="form" method="post">
+<div id="form1">
+        <h3>Username:</h3>
+        <input type = "text" placeholder="Enter username" id="name"></input>
+<br>
+        <h3>Password</h3>
+        <input type ="text" placeholder="Enter password"></input>
+<br>
+<legend><h3>Please check on multiple options</h3></legend>
+
+<input type="checkbox">Friends</input><br>
+<input type="checkbox">Family</input><br>
+<input type="checkbox">Relatives</input>
+<br>
+<legend><h3>Please check on single option</h3></legend>
+
+<input type="radio" name="radio1">Friends</input><br>
+<input type="radio" name="radio1">Family</input><br>
+<input type="radio" name="radio1">Relatives</input>
+<br><br>
+
+        <button type="submit" class="submit">Submit</input>
+</div>
+<div id="errors"></div>
+    </form>
+</body>
+</html>

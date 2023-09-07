@@ -1,0 +1,166 @@
+/* Add a black background color to the top navigation */
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(42, 231, 61);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+a.button{
+
+border: 3px solid black;
+  background-color: #1d0e75  ;
+  color: rgb(216, 158, 11);
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+
+/*header of home page*/
+#a1{
+  background-color: rgb(0, 0, 113);
+  color: orange;
+}
+#main1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+}
+
+/*logo of the homepage*/
+#logo img{
+  padding-left: 20px;
+}
+.mainimage img{
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+#main1content{
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+}
+
+#main1content h3{
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  line-height: 1.5;
+  font-weight: 150;
+}
+
+#main2content{
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  line-height: 1.5;
+}
+
+#main2content h3{
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  line-height: 1.5;
+  font-weight: 150;
+}
+
+
+/*footer in home page*/
+
+footer{
+  background-color: #034261;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color : white
+}
+
+.footer-content{
+  display : flex;
+  align-items: center;
+  justify-content: content;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight :400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin:10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socialmedia{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socialmedia li{
+  margin: 0 10px;
+}
+.socialmedia a{
+  text-decoration: none;
+  color: white;
+}
+.socialmedia a i{
+  font-size: 1.1rem;
+}
+
+.socialmedia a:hover{
+  color: rgb(148, 214, 24);
+}
+
+.footer-bottom{
+  background:black ;
+  width : 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: capitalize;
+  text-transform: capitalize;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .5;
+  font-weight: 200;
+}
+
